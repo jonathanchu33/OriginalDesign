@@ -1,3 +1,7 @@
+int cubeX = 200;
+int cubeY = 200;
+int sideLength = 150;
+int perspectiveSide = sideLength*5/6;
 void setup()
 {
   size(400,400);
@@ -11,7 +15,7 @@ void draw()
 void whiteSide()
 {
 	fill(255);
-	quad(200,200,200,350,75,300,75,150);
+	quad(cubeX,cubeY,cubeX,cubeY+sideLength,cubeX-perspectiveSide,cubeY+sideLength*2/3,cubeX-perspectiveSide,cubeY-sideLength*1/3);
 	line(158,183,158,333);
 	line(117,167,117,317);
 	line(75,200,200,250);
