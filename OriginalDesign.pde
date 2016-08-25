@@ -1,6 +1,9 @@
-int cubeX = 200;
+int cubeX = 200; 
 int cubeY = 200;
+int discoCubeX = 600;
+int discoCubeY = 200;
 int sideLength = 150;
+
 void setup()
 {
   size(800,400);
@@ -15,21 +18,21 @@ void draw()
   {
   	for(int y = 0; y < 3; y += 1)
   	{
-  		whiteQuad(600-x*sideLength*5/18,y*sideLength/3+200-x*sideLength/9);
+  		whiteQuad(discoCubeX-x*sideLength*5/18,y*sideLength/3+discoCubeY-x*sideLength/9);
   	}
   }
   for(int a = 0; a < 3; a += 1)
   {
   	for(int b = 0; b < 3; b += 1)
   	{
-  		greenQuad(600+a*sideLength*5/18,b*sideLength/3+200-a*sideLength/9);
+  		greenQuad(discoCubeX+a*sideLength*5/18,b*sideLength/3+discoCubeY-a*sideLength/9);
   	}
   }
   for(int j = 0; j < 3; j += 1)
   {
   	for(int k = 0; k < 3; k += 1)
   	{
-  		redQuad(k*sideLength*5/18+600-j*sideLength*5/18,200-j*sideLength/9-k*sideLength/9);
+  		redQuad(k*sideLength*5/18+discoCubeX-j*sideLength*5/18,discoCubeY-j*sideLength/9-k*sideLength/9);
   	}
   }
 }
