@@ -1,12 +1,13 @@
-int cubeX = 200; 
-int cubeY = 200;
-int discoCubeX = 600;
-int discoCubeY = 200;
+int cubeX = (int)(Math.random()*150+125);
+int cubeY = (int)(Math.random()*150+100);
+int discoCubeX = (int)(Math.random()*150+525);
+int discoCubeY = (int)(Math.random()*150+100);
 int sideLength = 150;
 
 void setup()
 {
   size(800,400);
+  background(255);
 }
 void draw()
 {
@@ -78,4 +79,13 @@ void redQuad(int xPosr,int yPosr)
 {
 	fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
 	quad(xPosr,yPosr,xPosr-sideLength*5/18,yPosr-sideLength/9,xPosr,yPosr-sideLength*2/9,xPosr+sideLength*5/18,yPosr-sideLength/9);
+}
+
+void mousePressed()
+{
+	cubeX = (int)(Math.random()*150+125);
+	cubeY = (int)(Math.random()*150+100);
+	discoCubeX = (int)(Math.random()*150+525);
+	discoCubeY = (int)(Math.random()*150+100);
+	background(255);
 }
