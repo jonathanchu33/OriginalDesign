@@ -1,7 +1,7 @@
-int cubeX = (int)(Math.random()*150+125);
-int cubeY = (int)(Math.random()*150+100);
-int discoCubeX = (int)(Math.random()*150+525);
-int discoCubeY = (int)(Math.random()*150+100);
+int cubeX = 200;
+int cubeY = 200;
+int discoCubeX = 600;
+int discoCubeY = 200;
 int sideLength = 150;
 
 void setup()
